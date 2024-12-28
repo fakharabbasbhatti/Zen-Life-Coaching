@@ -1,3 +1,148 @@
+// import React from "react";
+// import { FaChalkboardTeacher, FaBrain, FaLaptopCode, FaHandsHelping, FaUsers, FaStar, FaThumbsUp, FaHeart, FaCalendar, FaTrophy, FaRocket, FaGlobe } from "react-icons/fa";
+
+// const coachingSessions = [
+//   {
+//     id: 1,
+//     icon: <FaChalkboardTeacher className="text-4xl text-blue-600" />,
+//     title: "Personal Coaching",
+//     description: "One-on-one coaching tailored to your personal development goals.",
+//     link: "/sessions/personal-coaching",
+//   },
+//   {
+//     id: 2,
+//     icon: <FaBrain className="text-4xl text-green-600" />,
+//     title: "Mindset Coaching",
+//     description: "Build a growth mindset to achieve success and resilience.",
+//     link: "/sessions/mindset-coaching",
+//   },
+//   {
+//     id: 3,
+//     icon: <FaLaptopCode className="text-4xl text-purple-600" />,
+//     title: "Career Coaching",
+//     description: "Guidance for career advancement and professional growth.",
+//     link: "/sessions/career-coaching",
+//   },
+//   {
+//     id: 4,
+//     icon: <FaHandsHelping className="text-4xl text-orange-600" />,
+//     title: "Team Coaching",
+//     description: "Empowering teams to work collaboratively and achieve results.",
+//     link: "/sessions/team-coaching",
+//   },
+//   {
+//     id: 5,
+//     icon: <FaUsers className="text-4xl text-yellow-600" />,
+//     title: "Group Coaching",
+//     description: "Interactive coaching sessions in a group setting for collective growth.",
+//     link: "/sessions/group-coaching",
+//   },
+//   {
+//     id: 6,
+//     icon: <FaStar className="text-4xl text-pink-600" />,
+//     title: "Leadership Coaching",
+//     description: "Helping you develop the skills needed to lead effectively.",
+//     link: "/sessions/leadership-coaching",
+//   },
+//   {
+//     id: 7,
+//     icon: <FaThumbsUp className="text-4xl text-teal-600" />,
+//     title: "Confidence Coaching",
+//     description: "Boost your self-esteem and gain the confidence to tackle any challenge.",
+//     link: "/sessions/confidence-coaching",
+//   },
+//   {
+//     id: 8,
+//     icon: <FaHeart className="text-4xl text-red-600" />,
+//     title: "Emotional Intelligence Coaching",
+//     description: "Improve your emotional intelligence to enhance relationships and decision-making.",
+//     link: "/sessions/emotional-intelligence-coaching",
+//   },
+//   {
+//     id: 9,
+//     icon: <FaCalendar className="text-4xl text-indigo-600" />,
+//     title: "Time Management Coaching",
+//     description: "Learn how to effectively manage your time for a balanced life.",
+//     link: "/sessions/time-management-coaching",
+//   },
+//   {
+//     id: 10,
+//     icon: <FaTrophy className="text-4xl text-yellow-500" />,
+//     title: "Achievement Coaching",
+//     description: "Set and achieve your personal and professional goals with focused strategies.",
+//     link: "/sessions/achievement-coaching",
+//   },
+//   {
+//     id: 11,
+//     icon: <FaRocket className="text-4xl text-blue-500" />,
+//     title: "Innovation Coaching",
+//     description: "Foster creativity and innovative thinking to drive growth and change.",
+//     link: "/sessions/innovation-coaching",
+//   },
+//   // Adding the new session
+//   {
+//     id: 12,
+//     icon: <FaGlobe className="text-4xl text-teal-500" />,
+//     title: "Global Coaching",
+//     description: "Personalized coaching that bridges cultural differences and promotes global success.",
+//     link: "/sessions/global-coaching",
+//   },
+// ];
+
+// const CoachingSessions = () => {
+//   return (
+//     <div className="py-12 bg-gray-50">
+//       {/* Header Section */}
+//       <div className="text-center mb-8">
+//         <h2 className="text-3xl font-bold text-gray-800">Coaching Sessions</h2>
+//         <p className="mt-4 text-gray-600">
+//           Explore our coaching sessions designed to help you grow personally and professionally.
+//         </p>
+//       </div>
+
+//       {/* Sessions Grid */}
+//       <div className="container mx-auto px-4">
+//         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+//           {coachingSessions.map((session) => (
+//             <div
+//               key={session.id}
+//               className="bg-white shadow-lg rounded-lg overflow-hidden p-6 hover:shadow-xl transition-shadow duration-300"
+//             >
+//               {/* Icon */}
+//               <div className="flex justify-center items-center mb-4">
+//                 <div className="bg-gray-100 p-4 rounded-full">
+//                   {session.icon}
+//                 </div>
+//               </div>
+//               {/* Title */}
+//               <h3 className="text-xl font-bold text-gray-800 text-center">
+//                 {session.title}
+//               </h3>
+//               {/* Description */}
+//               <p className="mt-4 text-gray-600 text-center">
+//                 {session.description}
+//               </p>
+//               {/* Button */}
+//               <div className="text-center mt-6">
+//                 <a
+//                   href={session.link}
+//                   className="px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-500 transition-colors"
+//                 >
+//                   Learn More
+//                 </a>
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default CoachingSessions;
+
+
+
 import React from "react";
 import { GiThreeLeaves } from "react-icons/gi";
 import { PiGlobeStandFill } from "react-icons/pi";
@@ -139,3 +284,7 @@ const CardGetStarted = () => {
 };
 
 export default CardGetStarted;
+
+
+
+

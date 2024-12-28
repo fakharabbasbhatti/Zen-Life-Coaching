@@ -110,11 +110,11 @@ const CardContainer = () => {
         ))}
 
         {/* "View All" Button */}
-        <div className="w-full text-center mt-8">
+        {/* <div className="w-full text-center mt-8">
          <Link  to={'/getstarted'} className="px-6 py-2 bg-[#4F56DD] text-white font-semibold rounded-lg hover:bg-blue-500 transition-colors">
             View All
           </Link>
-        </div>
+        </div> */}
       </div>
     </>
   );

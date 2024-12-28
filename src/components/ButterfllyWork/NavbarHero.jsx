@@ -12,7 +12,7 @@ const NavbarHero = () => {
       <nav className="text-black p-4 bg-[#ffff87ec] relative">
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo Section */}
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-4">
             <div className="w-5 h-5 rounded-full flex items-center justify-center border-2 border-dotted border-[#808000]">
               {/* Question Mark Icon */}
               <span className="text-yellow-500 text-lg hover:text-yellow-700">
@@ -25,18 +25,10 @@ const NavbarHero = () => {
           </div>
 
           {/* Centered Links */}
-          <ul className="hidden md:flex space-x-8 text-lg font-bold">
+          <ul className="hidden md:flex space-x-4 text-base md:text-lg font-bold">
             <li>
               <Link to={"/"} className="hover:text-yellow-700 transition">
                 Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                to={"/services"}
-                className="hover:text-yellow-700 transition"
-              >
-                Services
               </Link>
             </li>
             <li>
@@ -49,12 +41,22 @@ const NavbarHero = () => {
                 Team
               </Link>
             </li>
+            <li>
+              <Link to={"/services"} className="hover:text-yellow-700 transition">
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link to={"/termspolicy"} className="hover:text-yellow-700 transition">
+                Terms & Policy
+              </Link>
+            </li>
           </ul>
 
           {/* Button Section */}
           <Link
-            to={"/getstarted"}
-            className="hidden md:block px-4 py-2 bg-[#808000] rounded-full text-white hover:bg-yellow-400 transition sm:w-full md:w-auto sm:px-6 md:px-4 sm:py-3 md:py-2"
+            to="getstarted"
+            className="hidden md:inline-block px-4 py-2 bg-[#808000] rounded-full text-white hover:bg-yellow-400 transition"
           >
             Get Started
           </Link>
@@ -89,7 +91,7 @@ const NavbarHero = () => {
 
         {/* Mobile Dropdown */}
         <div
-          className={`fixed top-0 right-0 h-[23rem] w-2/3 bg-gray-800 text-white transform ${
+          className={`fixed top-0 right-0 h-auto w-full bg-gray-800 text-white transform ${
             menuOpen ? "translate-x-0" : "translate-x-full"
           } transition-transform duration-300 ease-in-out z-50`}
         >
@@ -102,35 +104,42 @@ const NavbarHero = () => {
             </button>
             <Link
               to={"/"}
-              className="block py-2 px-4 text-lg hover:bg-yellow-700 rounded w-full text-center"
+              className="block py-2 px-4 text-lg hover:bg-yellow-700 rounded w-full text-center sm:mt-2"
               onClick={() => setMenuOpen(false)}
             >
               Home
             </Link>
             <Link
-              to={"/services"}
-              className="block py-2 px-4 text-lg hover:bg-yellow-700 rounded w-full text-center"
-              onClick={() => setMenuOpen(false)}
-            >
-              Services
-            </Link>
-            <Link
               to={"/about"}
-              className="block py-2 px-4 text-lg hover:bg-yellow-700 rounded w-full text-center"
+              className="block py-2 px-4 text-lg hover:bg-yellow-700 rounded w-full text-center sm:mt-2"
               onClick={() => setMenuOpen(false)}
             >
               About
             </Link>
             <Link
               to={"/team"}
-              className="block py-2 px-4 text-lg hover:bg-yellow-700 rounded w-full text-center"
+              className="block py-2 px-4 text-lg hover:bg-yellow-700 rounded w-full text-center sm:mt-2"
               onClick={() => setMenuOpen(false)}
             >
               Team
             </Link>
             <Link
-              to={"/getstarted"}
-              className="mt-4 px-4 py-2 bg-[#808000] rounded-full text-white hover:bg-yellow-400  transition w-full text-center"
+              to={"/services"}
+              className="block py-2 px-4 text-lg hover:bg-yellow-700 rounded w-full text-center sm:mt-2"
+              onClick={() => setMenuOpen(false)}
+            >
+              Services
+            </Link>
+            <Link
+              to={"/termspolicy"}
+              className="block py-2 px-4 text-lg hover:bg-yellow-700 rounded w-full text-center sm:mt-2"
+              onClick={() => setMenuOpen(false)}
+            >
+              Terms & Policy
+            </Link>
+            <Link
+              to="getstarted"
+              className="mt-4 px-4 py-2 bg-[#808000] rounded-full text-white hover:bg-yellow-400 transition w-[50%] sm:w-[30%] text-center"
               onClick={() => setMenuOpen(false)}
             >
               Get Started

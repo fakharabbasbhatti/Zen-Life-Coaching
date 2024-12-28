@@ -43,7 +43,7 @@ const Ali = () => {
       <h1 className="text-lg sm:text-xl text-center text-red-600 font-bold">
         {object?.intro}
       </h1>
-      <p className="text-base sm:text-lg text-center text-black font-medium leading-relaxed">
+      <p className="text-base sm:text-lg text-justify text-black font-medium leading-relaxed">
         {object?.introdction}
       </p>
 
@@ -51,7 +51,7 @@ const Ali = () => {
       <h1 className="text-lg sm:text-xl text-center text-red-600 font-bold">
         {object?.Exper}
       </h1>
-      <p className="text-base sm:text-lg text-center text-black font-medium leading-relaxed">
+      <p className="text-base sm:text-lg text-justify text-black font-medium leading-relaxed">
         {object?.Experience}
       </p>
 
@@ -59,7 +59,7 @@ const Ali = () => {
       <h1 className="text-lg sm:text-xl text-center text-red-600 font-bold">
         {object?.special}
       </h1>
-      <p className="text-base sm:text-lg text-center text-black font-medium leading-relaxed">
+      <p className="text-base sm:text-lg text-justify text-black font-medium leading-relaxed">
         {object?.specialization}
       </p>
 
