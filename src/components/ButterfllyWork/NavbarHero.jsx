@@ -12,7 +12,7 @@ const NavbarHero = () => {
       <nav className="text-black p-4 bg-[#ffff87ec] relative">
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo Section */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2">
             <div className="w-5 h-5 rounded-full flex items-center justify-center border-2 border-dotted border-[#808000]">
               {/* Question Mark Icon */}
               <span className="text-yellow-500 text-lg hover:text-yellow-700">
@@ -25,7 +25,7 @@ const NavbarHero = () => {
           </div>
 
           {/* Centered Links */}
-          <ul className="hidden md:flex space-x-4 text-base md:text-lg font-bold">
+          <ul className="hidden md:flex space-x-8 text-base md:text-lg font-bold">
             <li>
               <Link to={"/"} className="hover:text-yellow-700 transition">
                 Home
@@ -46,16 +46,16 @@ const NavbarHero = () => {
                 Services
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to={"/termspolicy"} className="hover:text-yellow-700 transition">
                 Terms & Policy
               </Link>
-            </li>
+            </li> */}
           </ul>
 
           {/* Button Section */}
           <Link
-            to="getstarted"
+           
             className="hidden md:inline-block px-4 py-2 bg-[#808000] rounded-full text-white hover:bg-yellow-400 transition"
           >
             Get Started
@@ -130,15 +130,15 @@ const NavbarHero = () => {
             >
               Services
             </Link>
-            <Link
+            {/* <Link
               to={"/termspolicy"}
               className="block py-2 px-4 text-lg hover:bg-yellow-700 rounded w-full text-center sm:mt-2"
               onClick={() => setMenuOpen(false)}
             >
               Terms & Policy
-            </Link>
+            </Link> */}
             <Link
-              to="getstarted"
+              
               className="mt-4 px-4 py-2 bg-[#808000] rounded-full text-white hover:bg-yellow-400 transition w-[50%] sm:w-[30%] text-center"
               onClick={() => setMenuOpen(false)}
             >

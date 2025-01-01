@@ -1,12 +1,17 @@
 import React from 'react';
 import { FaArrowRight } from 'react-icons/fa'; // Import an icon from react-icons
 import { Link } from 'react-router-dom';
+import chen from '../../assets/cardfot3.png';
+import sarah from '../../assets/sarha.avif';
+import emma from '../../assets/emma.jpg';
+import brtflyyelow from '../../assets/butflyyelow.png';
+
 export const cards = [
   {
-    image: 'https://s3-alpha-sig.figma.com/img/410c/340a/a057242400c608368f918307cdd72438?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OfpjyLPOnyWB3GL1xLMeHag3jj70GibHy3Ae~4s~Yuu0nps2Dxr8wE5RTDNLJQvuG5jMlJGc7ej4cJ3wQlZJI5RWuU6iLyaEVDh0jzovt5DzJRDySjrIt5oPU6ZIxS6YxjHYuAT914647cTAWf70~wTS8eek9XWURZdPwXf3hjMKUYQfRlWW9fY0SbJdUOvWN2HCYOWYBSBXEGr3XEYl73LKStkczm5ail1P7~SWqsRy767mEkeQWYozM~NKFiyB2HynrQRwy2kQWGjdl9YAGQVTovayjfANKxmf3MWTrVGq7WA5C8tM0rRnBvqZnbMjToiCD6P8mDgNiy4HV7V7fw__',
+    image: chen,
     heading: 'Dr. Michael Chen',
     title: 'Mindfulness Therapist',
-    description: 'Expert in mindfulness-based stress reduction and cognitive behavioral therapy.',
+    description: 'Expert in mindfulness-based stress reduction and cognitive behavioral therapy.helping clients manage anxiety depression.',
     buttonText: 'Learn More',
     link: 'Michael',
     intro: 'Introdction :',
@@ -19,10 +24,10 @@ export const cards = [
     id: 1
   },
   {
-    image: 'https://s3-alpha-sig.figma.com/img/f578/f9c2/a181ef669150341163e63e6e9da01878?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dQuv907JKAp65kChOzUAxwEv1YeSQbIdyUfiJqLHHl0QJ9dq4N61BfhctFpJxiAqGG5g9tj48zIbf7uHe-T3F7K0UDLAaqKeiddX1x3u6rrS9gLo4zMVjGYm8uBlkB1lBxCGR6HHoZf1q9n53V3UYKIj54P56pZOA2-zZQNGrqTKV7AaCeHR7T4PK0UMHprOpN0wFaf~f0qlQS4Kiebr~JTC~lrmLrIoXqk6KtDTzluOby87RRc7lrRgHIsEdrlnBmuBx8lqDRBhgwAJGEGexM06B~sbIccbQgwVluHiikfZMvw6BlWqX8Qurl~hpW7FOK8xGEUBjNXCQ55rxOhvnQ__',
+    image: sarah,
     heading: 'Sarah Johnson',
     title: 'Senior Life Coach',
-    description: '15+ years of experience in a good us a are transformational 15+ years of experience in transformational personal growth.',
+    description: '10+ years of experience in a good us a are transformational 15+ years of a good experience in transformational personal growth.',
     buttonText: 'Learn More',
     link: 'Sarah',
     intro: 'Introdction :',
@@ -36,10 +41,10 @@ export const cards = [
 
   },
   {
-    image: 'https://s3-alpha-sig.figma.com/img/1d5a/d8aa/f12fd61a75197f707f6ef40c7edd6e1f?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PosV6XqYF5gW61ql4ousa~DjXdmWY~W9O-yLOskGqdTmGCvSf1hnVLi4FZb1ZYyHbrYRviBCswYx4neAvjKK8NJ2zFTUshnbhiVkn9gB0tdBx3XxAkA2g8XDEJhvYQTYJlSQqxjoNLmdydE~8KtT3oCMNc4Jk83fc~XXRCXozAF56fmJDuToCf~dIqsEWJrIklhtaLw1abBeZylPDSA7qv~e3u2MiYKlwziUzEbboM6~OSP6~-2P3fUm7fEKJBDCXDJQU~n54S4eiZLuTjEyknjVeABXKi~M2rl0cGQbaNjXBhbNtuI1KI1Zo~hZIRmFqth1YjirIWLxGQImdBPkCg__',
+    image: emma,
     heading: 'Emma Rodriguez',
     title: 'Wellness Coach',
-    description: 'Certified wellness expert specializing in holistic health and lifestyle is a very transformation..',
+    description: 'Certified wellness expert specializing in holistic health and lifestyle is a very half transformation. She focuses on nutrition stress management.',
     buttonText: 'Learn More',
     link: 'Emma',
     intro: 'Introdction :',
@@ -88,9 +93,10 @@ const CardContainer = () => {
       {/* FIRST SECTION */}
       <div className="text-center p-8 bg-[#F5E2AC]">
         <div className="flex items-center justify-center space-x-4 ">
-          <img className="w-14 h-14 rounded-full rotate-45" src="https://s3-alpha-sig.figma.com/img/4e6a/eadb/238ecd8253d5f07ff3b13f70d9f9a683?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pGfC8cKZVS5f0uAUOv2SZ90ug5VXncwWnqyIMJNcl-i~Av1Xhk40xhwTX~Y01bzVt4pPglxmCy62aMW9LmDM9HLdWK~UjAqVbUkfh1HsQ9JRiQFYl9NJZs4ZxIeAzjp2EltKA1EBfgb73yxtAATeCOveesllq3J4GCzmdmR1ImnNvY0xMITosuZG3AkA~hhodOr5aqy~Wy5N9YhQH0hryw~3HJ366oloUazIOczQ3znkj9WPD2jGOMaD-IvmdVC4kMyFEFlrrnWnQjAAJpmM17WUEaP4~d4sGug~eshRlx0ms58BPDyvzlBAO~AqrzBbVUYIlbMzYqDKOCtHHCIjIQ__" alt="left" />
-          <h2 className="text-3xl font-bold text-[#6B21A8]">Our Expert Team</h2>
-          <img className="w-14 h-14 rounded-full -rotate-45" src="https://s3-alpha-sig.figma.com/img/4e6a/eadb/238ecd8253d5f07ff3b13f70d9f9a683?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pGfC8cKZVS5f0uAUOv2SZ90ug5VXncwWnqyIMJNcl-i~Av1Xhk40xhwTX~Y01bzVt4pPglxmCy62aMW9LmDM9HLdWK~UjAqVbUkfh1HsQ9JRiQFYl9NJZs4ZxIeAzjp2EltKA1EBfgb73yxtAATeCOveesllq3J4GCzmdmR1ImnNvY0xMITosuZG3AkA~hhodOr5aqy~Wy5N9YhQH0hryw~3HJ366oloUazIOczQ3znkj9WPD2jGOMaD-IvmdVC4kMyFEFlrrnWnQjAAJpmM17WUEaP4~d4sGug~eshRlx0ms58BPDyvzlBAO~AqrzBbVUYIlbMzYqDKOCtHHCIjIQ__" alt="right" />
+          <img className="w-14 h-14 rounded-full rotate-45" src={brtflyyelow} alt="left" />
+          <h2 className="text-lg sm:text-3xl font-bold text-[#6B21A8]">Our Expert Team</h2>
+          <img className="w-14 h-14 rounded-full -rotate-45" src={brtflyyelow} 
+          alt="right" />
         </div>
         <p className="text-lg text-gray-600 mt-4">"Meet our dedicated professionals who are committed to guiding you through your transformational journey"</p>
       </div>
