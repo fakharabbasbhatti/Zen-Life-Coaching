@@ -2,7 +2,6 @@ import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import NavbarHero from './components/ButterfllyWork/NavbarHero'
 import Butterflly from './pages/Butterflly'
-// import ButterfllyGetStarted from './pages/ButterfllyGetStarted'
 import ButterfllyAbout from './pages/ButterfllyAbout'
 import ButterfllyTeam from './pages/ButterfllyTeam'
 import ButterfllyServices from './pages/ButterfllyServices'
@@ -16,7 +15,8 @@ import ResourceLibraryServices from './pages/ResourceLibraryServices'
 import ProgressTracking from './components/ProgressTrackingButterflly/ProgressTracking'
 import MobileAppServices from './pages/MobileAppServices'
 import Footer from './components/ButterfllyWork/Footer'
-
+// import BlogPage  from './pages/BlogPage'
+// import GymContact  from './pages/GymContact'
 
 const App = () => {
   return (
@@ -25,7 +25,6 @@ const App = () => {
         <NavbarHero />
         <Routes>
           <Route path="/" element={<Butterflly />} />
-          {/* <Route path="/getstarted" element={<ButterfllyGetStarted />} /> */}
           <Route path="/about" element={<ButterfllyAbout />} />
           <Route path="/team" element={<ButterfllyTeam />} />
           <Route path="/services" element={<ButterfllyServices />} />
@@ -42,10 +41,10 @@ const App = () => {
         <Footer />
       </BrowserRouter>
 
-
-    </>
-  )
-}
+      {/* <BlogPage /> */}
+      {/* <GymContact/> */}
+ </>
+  )}
 
 export default App
 
